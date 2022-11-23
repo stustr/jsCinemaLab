@@ -46,7 +46,7 @@ Cinema.prototype.voidYear = function (year) {
 
 Cinema.prototype.checkAllLength = function (length) {
   const result = this.films.every((film) => {
-    return film.length >= length;
+    return film.length > length;
   })
   return result;
 }
